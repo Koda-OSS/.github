@@ -1,6 +1,6 @@
 <div align="center">
 
-[![Koda OSS](/koda/media/sourceBanner.png)](https://github.com/Koda-OSS)
+[![Koda OSS](/.koda/media/sourceBanner.png)](https://github.com/Koda-OSS)
 
 [![Documentation](https://shieldcn.dev/badge/website-Koda%20Docs-EAA7C8.svg?variant=secondary&size=xs&logo=data%3Aimage%2Fsvg%2Bxml%2C%3Csvg+xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27+fill%3D%27none%27+viewBox%3D%270+0+24+24%27%3E%3Cpath+fill%3D%27%2523fff%27+d%3D%27M12+20.6C12+16+8.1+12+3.4+12v8.6m8.6+0c0-4.7+3.9-8.6+8.6-8.6v8.6M12+3.4C12+8+8.1+12+3.4+12V3.4m8.6+0C12+8+15.9+12+20.6+12V3.4%27%2F%3E%3C%2Fsvg%3E)](https://docs.koda.sh)
 [![Website](https://shieldcn.dev/badge/website-Koda-9ED7E0.svg?variant=secondary&size=xs&logo=data%3Aimage%2Fsvg%2Bxml%2C%3Csvg+xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27+fill%3D%27none%27+viewBox%3D%270+0+24+24%27%3E%3Cpath+fill%3D%27%2523fff%27+d%3D%27M12+20.6C12+16+8.1+12+3.4+12v8.6m8.6+0c0-4.7+3.9-8.6+8.6-8.6v8.6M12+3.4C12+8+8.1+12+3.4+12V3.4m8.6+0C12+8+15.9+12+20.6+12V3.4%27%2F%3E%3C%2Fsvg%3E)](https://koda.sh)
