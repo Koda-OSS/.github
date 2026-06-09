@@ -73,9 +73,5 @@ This organization's profile is maintained in the [.github](https://github.com/Ko
 
 ---
 
-<div align="center">
-
 > [!NOTE]
 > Koda OSS maintains the open-source standards of the ecosystem. For commercial inquiries, please visit [koda.sh](https://koda.sh).
-
-</div>
