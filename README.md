@@ -20,6 +20,8 @@ We believe in open standards and transparent development. By separating our open
 * **Accessibility:** Providing high-quality, documented reference implementations for our core technologies.
 * **Collaboration:** Fostering a community-driven approach to language design and tool development.
 
+For our core pillars, engineering principles, and the boundary between **Koda OSS** and **Koda-sh**, see the [**Manifest**](/Manifest.md).
+
 ## Getting Started
 
 ### Using Our Libraries
@@ -29,9 +31,10 @@ We believe in open standards and transparent development. By separating our open
 
 ### Contributing
 We value community contributions. Whether you are fixing a bug, improving documentation, or proposing a feature:
-1.  **Check Guidelines:** Review the `CONTRIBUTING.md` in the specific repository.
-2.  **Standardize:** For changes to specs or parsers, ensure consistency with the established [Koda Docs](https://docs.koda.sh).
-3.  **Engage:** Join our [Discord](https://discord.gg/Uc2Dnyb3Ej) to discuss implementation details before starting large-scale changes.
+1.  **Read the Manifest:** Review our [Manifest](/Manifest.md) for core pillars and how we build software.
+2.  **Check Guidelines:** Review the `CONTRIBUTING.md` in the specific repository.
+3.  **Standardize:** For changes to specs or parsers, ensure consistency with the established [Koda Docs](https://docs.koda.sh).
+4.  **Engage:** Join our [Discord](https://discord.gg/Uc2Dnyb3Ej) to discuss implementation details before starting large-scale changes.
 
 ## Projects
 
@@ -43,6 +46,7 @@ We value community contributions. Whether you are fixing a bug, improving docume
 
 ## Resources
 
+* **[Manifest](/Manifest.md)** — Core pillars, engineering principles, and the Koda OSS / Koda-sh boundary.
 * **[Documentation Hub](https://docs.koda.sh)** — Official guides and specifications.
 * **[Blit Docs](https://docs.koda.sh/?alias=blit)** — Detailed language standards and API references.
 * **[Join the Community](https://discord.gg/Uc2Dnyb3Ej)** — Real-time support and community discussion.
@@ -55,6 +59,9 @@ No. **Koda OSS** focuses exclusively on open-source libraries and specifications
 
 ### How can I suggest a feature for a specification?
 Please open a discussion or issue within the relevant project repository. We prioritize community feedback for all language-level changes.
+
+### Where are the organization's principles documented?
+See the [**Manifest**](/Manifest.md) for core pillars, our Fast / Clean / Secure engineering goals, and how we separate open-source work from proprietary products.
 
 ### Where is the source code for this organization?
 This organization's profile is maintained in the [.github](https://github.com/Koda-OSS/.github) repository.
