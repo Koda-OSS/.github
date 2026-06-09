@@ -1,0 +1,49 @@
+{
+  "$schema": ".koda/kdx.schema.json",
+  "version": 1,
+  "corpus": "Koda-OSS is the open-source GitHub organization for the Koda ecosystem. It hosts public libraries, language specifications, and tooling such as blit.ts, alongside organization profile documentation and the Koda OSS Manifest describing core pillars, engineering principles (Fast, Clean, Secure), and the boundary between Koda-OSS open-source work and Koda-sh proprietary products.",
+  "directories": [
+    {
+      "path": ".koda/docs",
+      "attributes": ["type::md", "mode::primary"]
+    }
+  ],
+  "categories": [
+    {
+      "id": "overview",
+      "label": "Overview",
+      "order": 10,
+      "description": "Organization profile, mission, projects, and resources."
+    },
+    {
+      "id": "governance",
+      "label": "Governance",
+      "order": 20,
+      "description": "Core pillars, engineering principles, and OSS boundaries."
+    }
+  ],
+  "pages": [
+    {
+      "slug": "readme",
+      "path": ".koda/docs/readme.md",
+      "title": "Koda OSS",
+      "category": "overview",
+      "attributes": ["::type::guide"],
+      "search": {
+        "semanticSummary": "Organization profile for Koda-OSS covering mission, getting started, active projects such as blit.ts, resources, FAQ, and links to the Manifest and Koda documentation.",
+        "keywords": ["koda", "oss", "organization", "profile", "readme", "blit.ts", "open-source", "contributing", "projects"]
+      }
+    },
+    {
+      "slug": "manifest",
+      "path": ".koda/docs/manifest.md",
+      "title": "Manifest",
+      "category": "governance",
+      "attributes": ["::type::specification"],
+      "search": {
+        "semanticSummary": "Koda OSS Manifest defining core pillars, Fast Clean Secure engineering goals, and the boundary between open-source Koda-OSS work and proprietary Koda-sh products.",
+        "keywords": ["manifest", "pillars", "governance", "fast", "clean", "secure", "open-standards", "koda-sh", "engineering"]
+      }
+    }
+  ]
+}

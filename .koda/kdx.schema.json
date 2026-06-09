@@ -1,0 +1,188 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": ".koda/kdx.schema.json",
+  "title": "Koda Docs Manifest",
+  "description": "Project-level manifest for the Koda docs viewer: source directories, pages, autocomplete corpus, and navigation categories.",
+  "type": "object",
+  "required": ["version", "corpus", "directories", "categories", "pages"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "Path to this schema file for editor validation."
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Manifest schema version."
+    },
+    "corpus": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Project summary paragraph used as autocomplete context."
+    },
+    "directories": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Doc source roots relative to the project root.",
+      "items": {
+        "$ref": "#/$defs/directory"
+      }
+    },
+    "categories": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Flat ordered navigation taxonomy.",
+      "items": {
+        "$ref": "#/$defs/category"
+      }
+    },
+    "pages": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Page metadata and content file references.",
+      "items": {
+        "$ref": "#/$defs/page"
+      }
+    }
+  },
+  "$defs": {
+    "id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^[a-z0-9]+(?:[-.:][a-z0-9]+)*$",
+      "description": "Category or tag identifier using lowercase letters, digits, hyphens, dots, or colons."
+    },
+    "directoryAttribute": {
+      "type": "string",
+      "enum": [
+        "type::md",
+        "type::mdx",
+        "mode::primary",
+        "mode::fallback"
+      ]
+    },
+    "pageAttribute": {
+      "type": "string",
+      "pattern": "^::[a-z][a-z0-9-]*::[a-z0-9][a-z0-9.:-]*$",
+      "description": "Blit-style page tag excluding ::category::."
+    },
+    "directory": {
+      "type": "object",
+      "required": ["path", "attributes"],
+      "additionalProperties": false,
+      "properties": {
+        "path": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[^/\\\\].*[^/\\\\]$|^[^/\\\\]$",
+          "description": "Directory path relative to project root (no leading slash)."
+        },
+        "attributes": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "uniqueItems": true,
+          "description": "Exactly one type:: and one mode:: attribute.",
+          "items": {
+            "$ref": "#/$defs/directoryAttribute"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "enum": ["type::md", "type::mdx"]
+              }
+            },
+            {
+              "contains": {
+                "enum": ["mode::primary", "mode::fallback"]
+              }
+            }
+          ]
+        }
+      }
+    },
+    "category": {
+      "type": "object",
+      "required": ["id", "label", "order"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Sidebar display name."
+        },
+        "order": {
+          "type": "integer",
+          "description": "Sort key (ascending)."
+        },
+        "description": {
+          "type": "string",
+          "description": "Short tooltip or section intro."
+        }
+      }
+    },
+    "search": {
+      "type": "object",
+      "required": ["semanticSummary", "keywords"],
+      "additionalProperties": false,
+      "properties": {
+        "semanticSummary": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Semantic search summary for the page."
+        },
+        "keywords": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": "Search keywords for the page."
+        }
+      }
+    },
+    "page": {
+      "type": "object",
+      "required": ["slug", "path", "title", "category", "attributes", "search"],
+      "additionalProperties": false,
+      "properties": {
+        "slug": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+          "description": "Canonical page identifier and URL slug."
+        },
+        "path": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[^/\\\\].*\\.md$",
+          "description": "Markdown file path relative to project root."
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Page heading and nav label."
+        },
+        "category": {
+          "$ref": "#/$defs/id"
+        },
+        "attributes": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/pageAttribute"
+          },
+          "description": "Blit-style page tags excluding ::category::."
+        },
+        "search": {
+          "$ref": "#/$defs/search"
+        }
+      }
+    }
+  }
+}
