@@ -8,63 +8,55 @@
 [![GitHub (koda oss)](https://shieldcn.dev/badge/github-Koda%20OSS-2C40FF.svg?variant=secondary&size=xs&logo=github)](https://github.com/Koda-OSS)
 [![GitHub (koda sh)](https://shieldcn.dev/badge/github-Koda-2C40FF.svg?variant=secondary&size=xs&logo=github)](https://github.com/Koda-sh)
 
-**Koda OSS** is the open-source home for the Koda ecosystem. We provide the fundamental libraries, language specifications, and tooling that power our platform, enabling developers to build, extend, and integrate with Koda standards.
+> Koda OSS is the open-source hub powering the Koda ecosystem. Delivering modern standards, open libraries, fast algorithms, and reliable primitives.
 
 </div>
 
 ## Core Mission
-
 We believe in open standards and transparent development. By separating our open-source efforts from our proprietary infrastructure, we empower the community to adopt, inspect, and contribute to the building blocks of the Koda platform.
 
-* **Standardization:** Developing open, vendor-neutral specifications for the Koda ecosystem.
-* **Accessibility:** Providing high-quality, documented reference implementations for our core technologies.
-* **Collaboration:** Fostering a community-driven approach to language design and tool development.
+* Standardization: Developing open, vendor-neutral specifications for the Koda ecosystem.
+* Accessibility: Providing high-quality, documented reference implementations for our core technologies.
+* Collaboration: Fostering a community-driven approach to language design and tool development.
+For our core pillars, engineering principles, and the boundary between Koda OSS and Koda-sh, see the [Manifest](https://github.com/Koda-OSS/.github/blob/main/Manifest.md).
 
-For our core pillars, engineering principles, and the boundary between **Koda OSS** and **Koda-sh**, see the [**Manifest**](/Manifest.md).
+## Glyph
+
+**Glyph** is a document fingerprinting toolkit designed to generate, compare, and query weighted set fingerprints at scale.
+
+* **Glyph Core:** Contains all generation and comparison primitives for creating weighted BagMinHash fingerprints and calculating similarity.
+* **Glyph Query:** Contains all search-related primitives, including indexing structures and fast query lookup primitives for large datasets.
+
+Check out the full [Glyph Documentation](https://docs.koda.sh/?alias=glyph) to start integration.
+
+## Active Projects
+
+| Project | Description | Module |
+| :--- | :--- | :--- |
+| [**Glyph**](https://github.com/Koda-OSS/glyph) | BagMinHash toolkit for fingerprint generation, comparison, indexing, and querying. | `glyph-core`, `glyph-query` |
+| [**blit.ts**](https://github.com/Koda-OSS/blit.ts) | Official TypeScript parser for the Blit expression language. Zero runtime dependencies. | Core Library |
 
 ## Getting Started
 
-### Using Our Libraries
-1.  **Browse Projects:** View our [Active Projects](#projects) below.
-2.  **Consult Documentation:** Visit the [docs.koda.sh](https://docs.koda.sh) for API references, guides, and specifications.
-3.  **Integrate:** Follow the installation instructions provided in each repository's README.
+### Using Libraries
+1. Select a repository from [Active Projects](#active-projects).
+2. Read the project documentation on [docs.koda.sh](https://docs.koda.sh).
+3. Follow the installation steps in the project repository.
 
 ### Contributing
-We value community contributions. Whether you are fixing a bug, improving documentation, or proposing a feature:
-1.  **Read the Manifest:** Review our [Manifest](/Manifest.md) for core pillars and how we build software.
-2.  **Check Guidelines:** Review the `CONTRIBUTING.md` in the specific repository.
-3.  **Standardize:** For changes to specs or parsers, ensure consistency with the established [Koda Docs](https://docs.koda.sh).
-4.  **Engage:** Join our [Discord](https://discord.gg/Uc2Dnyb3Ej) to discuss implementation details before starting large-scale changes.
+1. Read the [Manifest](/Manifest.md) to learn our engineering principles.
+2. Review the `CONTRIBUTING.md` file in the target repository.
+3. Join our [Discord](https://discord.gg/Uc2Dnyb3Ej) to talk with developers before starting large changes.
 
-## Projects
+## Frequently Asked Questions
 
-*Core repositories maintained by Koda OSS.*
+### What is the difference between Koda OSS and Koda-sh?
+Koda OSS maintains open-source libraries and specifications. [Koda-sh](https://github.com/Koda-sh) manages commercial products and private infrastructure.
 
-| Project | Description |
-| :--- | :--- |
-| [**blit.ts**](https://github.com/Koda-OSS/blit.ts) | Official TypeScript parser for the Blit expression language. Zero runtime dependencies. |
-
-## Resources
-
-* **[Manifest](/Manifest.md)** — Core pillars, engineering principles, and the Koda OSS / Koda-sh boundary.
-* **[Documentation Hub](https://docs.koda.sh)** — Official guides and specifications.
-* **[Blit Docs](https://docs.koda.sh/?alias=blit)** — Detailed language standards and API references.
-* **[Join the Community](https://discord.gg/Uc2Dnyb3Ej)** — Real-time support and community discussion.
-* **[Corporate Website](https://koda.sh)** — Corporate overview and news.
-
-## FAQ
-
-### Is this the same as Koda-sh?
-No. **Koda OSS** focuses exclusively on open-source libraries and specifications. Proprietary products and internal infrastructure are managed by our primary organization, [Koda-sh](https://github.com/Koda-sh).
-
-### How can I suggest a feature for a specification?
-Please open a discussion or issue within the relevant project repository. We prioritize community feedback for all language-level changes.
-
-### Where are the organization's principles documented?
-See the [**Manifest**](/Manifest.md) for core pillars, our Fast / Clean / Secure engineering goals, and how we separate open-source work from proprietary products.
-
-### Where is the source code for this organization?
-This organization's profile is maintained in the [.github](https://github.com/Koda-OSS/.github) repository.
+### How do I request a new feature?
+Open an issue or start a discussion in the correct project repository.
 
 > [!NOTE]
-> Koda OSS maintains the open-source standards of the ecosystem. For commercial inquiries, please visit [koda.sh](https://koda.sh).
+> Koda OSS maintains public standards for the ecosystem. For commercial details, go to [koda.sh](https://koda.sh).
+> [!NOTE]
+> Koda OSS maintains public standards for the ecosystem. For commercial details, go to [koda.sh](https://koda.sh).
