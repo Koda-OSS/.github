@@ -35,7 +35,7 @@ Check out the full [Glyph Documentation](https://docs.koda.sh/?alias=glyph) to s
 | :--- | :--- | :--- |
 | [**Glyph**](https://github.com/Koda-OSS/glyph) | BagMinHash toolkit for fingerprint generation, comparison, indexing, and querying. | `glyph-core`, `glyph-query` |
 | [**blit.ts**](https://github.com/Koda-OSS/blit.ts) | Official TypeScript parser for the Blit expression language. Zero runtime dependencies. | Core Library |
-| [**Glyph Blog**](https://github.com/Koda-OSS/glyph-blog | Official Astro, Bearnie UI and Glyph blog starter | Template, Demo |
+| [**Glyph Blog**](https://github.com/Koda-OSS/glyph-blog) | Official Astro, Bearnie UI and Glyph blog starter | Template, Demo |
 
 ## Getting Started
 
